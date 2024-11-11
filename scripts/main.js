@@ -16,6 +16,8 @@ window.onload = myFunction; // Executions of referred function
 function myFunction() // Desired executions of myFunction defined below inside {}:
 {
     var iframe = document.createElement('iframe');
+    iframe.width = '100%';
+    iframe.height = '100%';
     iframe.src = url;
     document.body.appendChild(iframe); // Append 'iframe' as a child element of body to the html document
 }
