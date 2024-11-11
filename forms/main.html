@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulärmotor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="formContainer" class="form-container">
+        <div class="header">
+            <span>Formulär</span>
+            <button id="minimizeBtn" class="minimize-btn">-</button>
+        </div>
+        <form id="form" action="#" method="POST">
+            <label for="teamSelection">Välj ett team:</label>
+            <select id="teamSelection" name="team">
+                <option value="team1">Team 1</option>
+                <option value="team2">Team 2</option>
+                <option value="team3">Team 3</option>
+            </select>
+            <br>
+            <label for="comments">Kommentarer:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br>
+            <div class="gdpr">
+                <p>Genom att skicka in formuläret godkänner du att dina uppgifter blir synliga för teamet och hanteras enligt GDPR.</p>
+            </div>
+            <button type="submit" id="submitBtn">Skicka</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
