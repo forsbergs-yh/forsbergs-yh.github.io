@@ -6,7 +6,7 @@
 3: Your app accesses the API with the user's access token
 */
 const clientId = 'Ov23liGusittSCIzNE2p';  // Client ID of the GitHub OAuth app
-const url = 'https://github.com/login/oauth/authorize';
+const url = 'https://github.com/login/oauth/authorize?client_id=${clientId}&state=${state}';
 const state = Math.random().toString(36).substring(2);  // Generating a random string for the state parameter
 
 window.onload = myFunction; // Executions of referred function
