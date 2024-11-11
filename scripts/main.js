@@ -9,10 +9,10 @@ const clientId = 'Ov23liGusittSCIzNE2p';  // Client ID of the GitHub OAuth app
 const url = 'https://github.com/login/oauth/authorize';
 const state = Math.random().toString(36).substring(2);  // Generating a random string for the state parameter
 
-fetch( // function that makes HTTP requests to specified url
-    clientId,
-    
-    url, {
-    method: "GET" // The HTTP method for 'url'. Defaults to GET if not defined.;
-    
-})
+window.onload(myFunction); // Executions of referred function
+
+// "myFunction" can be named any other "camelCase" defined name of choice
+function myFunction() // Desired executions of myFunction defined below inside {}:
+{
+    window.location.href = url; // Navigates to 'url'
+}
